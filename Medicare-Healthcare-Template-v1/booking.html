@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book Appointment — Medicare</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Medicare</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link active" href="booking.html">Book</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN WRAPPER START -->
+<main class="flex-fill">
+
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="fw-bold">Book an Appointment</h1>
+      <p class="text-muted">Select a date and preferred doctor — we'll confirm by email.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label class="form-label">Full name</label>
+              <input class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input class="form-control" type="email" name="email" required>
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Preferred date</label>
+                <input class="form-control" type="date" name="date" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Preferred time</label>
+                <input class="form-control" type="time" name="time" required>
+              </div>
+            </div>
+            <div class="mb-3 mt-3">
+              <label class="form-label">Service</label>
+              <select class="form-select" name="service">
+                <option>General Consultation</option>
+                <option>Pediatrics</option>
+                <option>Diagnostics</option>
+                <option>Follow-up</option>
+              </select>
+            </div>
+            <button class="btn btn-primary">Request Appointment</button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card p-4 shadow-sm">
+            <h5 class="fw-bold">How it works</h5>
+            <ol class="small text-muted">
+              <li>Complete request form.</li>
+              <li>Clinic confirms availability via email.</li>
+              <li>Pay or confirm at time of visit.</li>
+            </ol>
+            <p class="mb-0"><strong>Need urgent care?</strong> Call +44 123 456 789.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- MAIN WRAPPER END -->
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p class="mb-0">&copy; <span id="year5"></span> Medicare. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
